@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Header: React.FC = () => {
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar variant="dark" expand="lg" style={{ backgroundColor: '#15202b' }}>
         <Container>
           <Navbar.Brand as={NavLink} to="/">MyApp</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
