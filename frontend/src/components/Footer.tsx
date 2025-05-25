@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <Container className="d-flex justify-content-between">
         <div>© 2025 MyApp</div>
         <Nav>
-          <Nav.Link as={NavLink} to="/settings" className="text-white">
+          <Nav.Link as={NavLink} to="/settings" className="text-white fs-5">
             設定
           </Nav.Link>
         </Nav>

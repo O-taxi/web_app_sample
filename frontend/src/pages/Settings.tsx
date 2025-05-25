@@ -7,7 +7,7 @@ const Settings: React.FC = () => {
 
   return (
     <Container className="py-5">
-      <h2>設定ページ</h2>
+      <h2 className="mb-4 fs-3">設定</h2>
       <Form>
         <Form.Check
           type="switch"
@@ -15,6 +15,7 @@ const Settings: React.FC = () => {
           label={`テーマ：${theme === 'dark' ? 'ダーク' : 'ライト'}`}
           checked={theme === 'dark'}
           onChange={toggleTheme}
+          className="fs-4"
         />
       </Form>
     </Container>
