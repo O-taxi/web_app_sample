@@ -1,17 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './pages/Home';
-import About from './pages/About';
+import Footer from './components/Footer';
+import AppRoutes from './routes/AppRoutes';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <div className="d-flex flex-column min-vh-100">
+        <Header />
+        <main className="flex-grow-1">
+          <AppRoutes />
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 };
