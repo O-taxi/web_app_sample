@@ -1,8 +1,7 @@
-import React from 'react';
 import { Container, Form } from 'react-bootstrap';
 import { useTheme } from '../contexts/ThemeContext';
 
-const Settings: React.FC = () => {
+function Settings() {
   const { theme, toggleTheme } = useTheme();
 
   return (

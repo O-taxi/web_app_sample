@@ -5,21 +5,18 @@ import Footer from './components/Footer';
 import AppRoutes from './routes/AppRoutes';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 
-const ThemedLayout: React.FC = () => {
+function ThemedLayout() {
   const { theme } = useTheme();
-
   return (
     <div className={`d-flex flex-column min-vh-100 bg-${theme} text-${theme === 'dark' ? 'light' : 'dark'}`}>
       <Header />
-      <main className="flex-grow-1">
-        <AppRoutes />
-      </main>
+      <AppRoutes />
       <Footer />
     </div>
   );
 };
 
-const App: React.FC = () => {
+function App() {
   return (
     <Router>
       <ThemeProvider>
