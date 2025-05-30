@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { useMsal } from "@azure/msal-react";
 import { useAuth } from "../contexts/AuthContext";
 
-const Header: React.FC = () => {
+function Header() {
   const { instance } = useMsal();
   const { getUser } = useAuth();
   const user = getUser();
